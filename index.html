@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8" />
@@ -35,9 +35,9 @@
             transition: transform 1s;
         }
 
-            .card.open {
-                transform: rotateY(180deg);
-            }
+        .card.open {
+            transform: rotateY(180deg);
+        }
 
         .card-front, .card-back {
             position: absolute;
@@ -73,19 +73,14 @@
             top: 0;
             bottom: 0;
             width: 80px;
-            background: url('flower.png') repeat-y center/contain;
+            /* Tên file hoa nền mặc định, nếu bạn có file khác, thay tên vào đây */
+            background: url('flower.png') repeat-y center/contain; 
             z-index: 1;
             pointer-events: none;
         }
 
-            .flowers.left {
-                left: 0;
-            }
-
-            .flowers.right {
-                right: 0;
-                transform: scaleX(-1);
-            }
+        .flowers.left { left: 0; }
+        .flowers.right { right: 0; transform: scaleX(-1); }
 
         /* Ảnh bạn và mẹ */
         .photo-section {
@@ -96,17 +91,17 @@
             gap: 50px;
         }
 
-            .photo-section img {
-                width: 180px;
-                height: 180px;
-                border-radius: 50%;
-                object-fit: cover;
-                transition: transform 0.6s;
-            }
+        .photo-section img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
 
-                .photo-section img:hover {
-                    transform: scale(1.1);
-                }
+        .photo-section img:hover {
+            transform: scale(1.1);
+        }
 
         /* Bộ sưu tập 5 hình */
         .gallery {
@@ -121,44 +116,30 @@
             align-items: center;
         }
 
-            .gallery img {
-                width: 250px;
-                height: 250px;
-                border-radius: 10px;
-                object-fit: cover;
-                opacity: 0;
-                transform: scale(0.9);
-                transition: all 0.8s ease;
-            }
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            object-fit: cover;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.8s ease;
+        }
 
-                .gallery img.visible {
-                    opacity: 1;
-                    transform: scale(1);
-                }
+        .gallery img.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
 
-                .gallery img:hover {
-                    transform: scale(1.05);
-                }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
 
-                .gallery img:nth-child(1) {
-                    grid-area: a;
-                }
-
-                .gallery img:nth-child(2) {
-                    grid-area: b;
-                }
-
-                .gallery img:nth-child(3) {
-                    grid-area: c;
-                }
-
-                .gallery img:nth-child(4) {
-                    grid-area: d;
-                }
-
-                .gallery img:nth-child(5) {
-                    grid-area: e;
-                }
+        .gallery img:nth-child(1) { grid-area: a; }
+        .gallery img:nth-child(2) { grid-area: b; }
+        .gallery img:nth-child(3) { grid-area: c; }
+        .gallery img:nth-child(4) { grid-area: d; }
+        .gallery img:nth-child(5) { grid-area: e; }
 
         /* Lời kết */
         .footer {
@@ -181,17 +162,16 @@
     </div>
 
     <div class="photo-section">
-        <!-- URL ảnh bạn và mẹ, để mặc định nếu chưa thêm -->
-        <img src="https://via.placeholder.com/180" alt="Mẹ" />
-        <img src="https://via.placeholder.com/180" alt="Con" />
+        <img src="H1.jpg" alt="Mẹ" />
+        <img src="h2.jpg" alt="Con" />
     </div>
 
     <div class="gallery">
-        <img src="https://via.placeholder.com/250" alt="Hình 1" />
-        <img src="https://via.placeholder.com/250" alt="Hình 2" />
-        <img src="https://via.placeholder.com/250" alt="Hình 3" />
-        <img src="https://via.placeholder.com/250" alt="Hình 4" />
-        <img src="https://via.placeholder.com/250" alt="Hình 5" />
+        <img src="H1.jpg" alt="Hình 1" />
+        <img src="h2.jpg" alt="Hình 2" />
+        <img src="h3.jpg" alt="Hình 3" />
+        <img src="h4.jpg" alt="Hình 4" />
+        <img src="h5.jpg" alt="Hình 5" />
     </div>
 
     <div class="footer">From Zozo — Con trai của mẹ 💌</div>
